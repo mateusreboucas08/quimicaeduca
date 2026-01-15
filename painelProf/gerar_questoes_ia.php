@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 
 // 🚨 1. CONFIGURAÇÃO - Substitua pela sua chave Gemini API 🚨
 // Chave inserida pelo usuário. Mantenha em um local seguro.
-$api_key = "AIzaSyAvNqwPF3zeMy_2g_TadCCZG2gU0aFDMPw"; 
+$api_key = "insert_your_key"; 
 // Usando o endpoint correto para o modelo e funcionalidades.
 $api_endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
@@ -149,4 +149,5 @@ if ($json_content_string) {
 }
 
 echo json_encode(['status' => 'error', 'message' => 'A IA não conseguiu gerar o JSON estruturado corretamente. Tente refinar o tema ou a instrução.']);
+
 ?>
