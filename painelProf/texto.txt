@@ -1,0 +1,2 @@
+Painel de Professor:
+Necessário criar uma pasta Uploads
