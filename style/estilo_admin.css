@@ -1,0 +1,104 @@
+/* ARQUIVO: estilo_admin.css */
+
+/* 1. Reset e Configurações Globais */
+body {
+    padding-top: 50px; /* Espaço para a navbar superior fixa */
+    background-color: #f8f8f8; /* Fundo claro para o corpo principal */
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Barra de Navegação Superior (Header) */
+.navbar-top {
+    /* Cor Dark Invertida (Pode ser ajustada para a identidade de Química) */
+    background-color: #222; 
+    border-color: #080808;
+}
+.navbar-brand, .navbar-top a {
+    color: #eee !important;
+}
+.navbar-top .active a {
+    background-color: #333 !important;
+}
+
+/* 3. Barra Lateral (Sidebar) */
+#sidebar {
+    position: fixed;
+    top: 50px; /* Começa abaixo da navbar superior */
+    left: 0;
+    width: 250px; /* Aumentei um pouco a largura */
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: #343a40; /* Cor escura do painel */
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    z-index: 1000;
+}
+
+/* 4. Estilo dos Itens do Menu Lateral */
+.side-bar > li > a {
+    color: #eee;
+    width: 250px;
+    padding: 10px 15px;
+    display: block;
+    border-left: 3px solid transparent; /* Efeito de ativação */
+}
+
+.side-bar li a:hover,
+.side-bar li a:focus {
+    background-color: #495057; /* Cor de hover */
+    color: white;
+}
+
+.side-bar .active a {
+    background-color: #007bff; /* Cor principal de Química/Educação */
+    border-left: 3px solid #f8f9fa;
+    font-weight: bold;
+}
+
+/* 5. Estilo do Conteúdo Principal (Central) */
+.main-content {
+    margin-left: 250px; /* Deve ser igual à largura da sidebar */
+    padding: 20px;
+}
+
+/* 6. Cabeçalhos e Breadcrumbs */
+.page-header {
+    margin-top: 0;
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.breadcrumb li {
+    display: inline;
+}
+
+/* 7. Card e Alertas */
+.card-info {
+    border: 1px solid #ced4da;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Adaptação para Responsividade */
+@media (max-width: 768px) {
+    #sidebar {
+        /* Esconde a barra lateral em telas pequenas por padrão */
+        display: none; 
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}

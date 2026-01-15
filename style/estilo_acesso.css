@@ -1,0 +1,98 @@
+/* ARQUIVO: estilo_acesso.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* Fundo levemente cinza */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Ocupa a altura total da tela */
+    margin: 0;
+}
+
+/* 1. Container Principal do Formulário */
+.container-acesso {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 90%;
+}
+
+/* 2. Cabeçalhos */
+h1 {
+    color: #007bff; /* Azul primário */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* 3. Estilo dos Campos do Formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 4. Botão de Ação */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Verde para ação principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #1e7e34;
+}
+
+/* 5. Links e Mensagens */
+.link-alternativo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-alternativo a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
